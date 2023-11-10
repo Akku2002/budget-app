@@ -23,7 +23,7 @@ import BudgetPage, { budgetPageAction, budgetPageLoader } from "./pages/budget-p
 //router
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/budget-app" element={<RootLayout />} loader={rootLoader} errorElement={<Error />}>
+    <Route path="/" element={<RootLayout />} loader={rootLoader} errorElement={<Error />}>
       <Route index={true} element={<DashBoard />} loader={dashboardLoader} action={dashboardAction} errorElement={<Error />}></Route>
       <Route path="budget/:id" element={<BudgetPage />} loader={budgetPageLoader} action={budgetPageAction} errorElement={<Error />}>
         <Route path="delete" action={deleteBudget} />
