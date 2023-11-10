@@ -10,5 +10,5 @@ export default function logoutAction(){
     //show notification
     toast.success("You've deleted your Account!");
     //return redirect
-    return redirect("/budget-app");
+    return redirect("/");
 }

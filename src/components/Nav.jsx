@@ -1,9 +1,12 @@
 import { NavLink,Form } from "react-router-dom";
+
+import logomark from "../assets/logomark.svg";
+
 export default function Nav({userName}) {
     return (
         <nav>
             <NavLink to="/">
-                <img src="/assets/logomark.svg" alt="home-logo" height={30}/>
+                <img src={logomark} alt="home-logo" height={30}/>
                 <span>HomeBudget</span>
             </NavLink>
             {

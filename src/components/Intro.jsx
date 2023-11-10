@@ -1,4 +1,6 @@
-import { Form, useFetcher } from "react-router-dom"
+import { useFetcher } from "react-router-dom";
+
+import illustration from "../assets/illustration.svg";
 
 export default function Intro() {
     const fetcher = useFetcher();
@@ -29,7 +31,7 @@ export default function Intro() {
                 
                 </fetcher.Form>
             </div>
-            <img src="/assets/illustration.svg" alt="person-saving-money" width={600}></img>
+            <img src={illustration} alt="person-saving-money" width={600}></img>
         </div>
     )
 }
