@@ -31,7 +31,7 @@ const router = createBrowserRouter(
       <Route path="expenses" element={<ExpensesPage />} loader={expensesPageLoader} action={expensesPageAction} errorElement={<Error />}/>
       <Route path="logout" action={logoutAction}/>
     </Route>
-  )
+  ),{basename:"/budget-app"}
 );
 
 //App
